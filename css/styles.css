@@ -582,10 +582,8 @@ img {
 }
 
 .form {
-    display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 8px;
 }
 
 .form-field {
@@ -620,9 +618,13 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus 
-.form-icon:focus {
+.form-input:focus,
+.text-r:focus {
     border-color: #4D5AE5;
+}
+
+.icon-emiil:focus {
+    fill: #4D5AE5;
 }
 
 .form-icon {
@@ -657,6 +659,7 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .field {
     margin-bottom: 24px;
 }
@@ -674,14 +677,6 @@ img {
     }
 }
 
-.modal-chek {
-    visually: hidden;
-}
-
-.modal-chek:checked + .modal-chek {
-border: none;
-}
-
 .spn {
     width: 16px;
     height: 16px;
@@ -694,7 +689,7 @@ border: none;
     fill: transparent;
 }
 
-.modal-chek + .spn {
+.visually-hidden:checked + .m-chek {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
